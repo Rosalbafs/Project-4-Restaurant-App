@@ -6,7 +6,7 @@ export const useSendData = (data) => {
   if (!data.text || !data.author) {
     return
   }
-  axios.post('http://localhost:5000/message', data)
+  axios.post('http://localhost:3000/message', data)
     .then(response => {
       console.log(response);
       return response
